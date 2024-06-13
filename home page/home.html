@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPEC</title>
+    <link href="home.css" rel="stylesheet">
+ 
+</head>
+<body>
+    <!-- header start -->
+    <script src="home.js" defer></script>
+   <div class="header">
+    <div class="logo">
+        <img src="../images/logo.png" alt="Logo">
+        
+    </div>
+    <nav>
+        <ul>
+            <li class="active">
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="#Projects">Our Projects</a>
+            </li>
+            <li>
+                <a href="#Aboutus">About us</a>
+            </li>
+            <li>
+                <a href="#Contactus" class="contact-button">Contact Us </a>
+                
+            </li>
+        </ul>
+        <button class="menu-toggle" onclick="toggleSidebar()">&#9776;</button>
+    </nav>   
+
+</div>
+   <div class="sidebar" id="sidebar">
+    
+    <div class="logo">
+        <a href="#" class="closebtn" onclick="toggleSidebar()">&times;</a>
+        <img src="/images/logo.png" alt="Opec Logo">
+    </div>
+    <a href="">Home</a>
+    <a href="#services">Services</a>
+    <a href="#Projects">Portfolio</a>
+    <a href="#Aboutus">About us</a>
+    <a href="#Contactus" class="contact-button">Contact us </a>
+</div>
+   <!-- header end -->
+   
+   <!-- hero start -->
+  <div class="background">
+    <img id="graphic-1"src="/images/bg-effect1.svg">
+    <img id="graphic-2" src="/images/BG effect 2.svg">
+  </div>
+   <div class="hero" >
+        <div class="content">
+            <h1>Build Your<br> Awesome<br> Website</h1>
+            <p>Opec studio is a digital studio that offers several services<br> such as UI/UX Design to developers, we will provide the best<br> service for those of you who use our services.</p>
+            <div class="button">
+            <a >Our Services</a>
+            <img src="/images/arrow-right-up.svg">
+            </div>
+        </div>
+        <div class="girl">
+            <div class="graphics">
+            <img id="graph-1"src="/images/Bg graphics 1.svg" alt="hero-girl">
+            <img id="graph-2"src="/images/Bg graphics 2.svg" alt="hero-girl">
+            <img id="graph-3"src="/images/Bg graphics 3.svg" alt="hero-girl">
+            <img id="graph-4"src="/images/Bg graphics 4.svg" alt="hero-girl">
+            <img src="/images/Girl image.svg">
+            </div>
+        </div>
+   </div>
+   <!-- hero end -->
+
+   <!-- service start -->
+   
+    <div class="service" id="services">
+        <img id="graph-5"src="/images/Bg graphics 2.svg" alt="hero-girl">
+        <h2>The Service We Provide<br> For You</h2>
+        <div class="containers">
+            <div class="container">
+                <img src="../images/Icon 1.svg">
+                <h3>UI/UX Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="dot"></div>
+            </div>
+            <div class="container">
+                <img src="../images/Icon 2.svg">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="dot"></div>
+            </div>
+            <div class="container">
+                <img src="../images/Icon 3.svg">
+                <h3>Motion Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="dot"></div>
+            </div>
+            
+        </div>
+        <img id="graph-4"src="/images/Bg graphics 4.svg" alt="hero-girl">
+    </div>
+   
+   
+    <!-- service end -->
+
+    <!-- portofolio start -->
+     <img src="/images/BG effect 3.svg" id="graphic-3">
+    <div class="portofolio" id="Projects">
+        <h2>Our Awesome Portfolio</h2>
+        <div class="tab">
+            <a class="tablinks" onclick="opentab(event,'All')"  id="defaultOpen">All</a>
+            <a class="tablinks" onclick="opentab(event,'Website')">Website</a>
+            <a class="tablinks" onclick="opentab(event,'Apps')">Apps</a>
+            <a class="tablinks" onclick="opentab(event,'Newsletters')">Newsletters</a>
+        </div>
+
+        <div id="All" class="tabs">
+    
+            <div class="data">
+            <div class="left">
+                <img src="../images/Portfolio image 1.png" alt="app 1">
+                <h3>ConceptZilla</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="" class="contact-button">View more</a>
+                <div class="arrow-buttons">
+                    <button class="arrow-button left">
+                        <span class="arrow">&#10094;</span> 
+                    </button>
+                    <button class="arrow-button right">
+                        <span class="arrow">&#10095;</span>
+                    </button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="element">
+                    <div class="right-content">
+                        <h4>VideoPad</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  
+                    </div>
+                    <img src="/images/app2.png" alt="app2">
+                </div>
+                <div class="element">
+                    <div class="right-content">
+                        <h4>Panto</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+               
+                    </div>
+                    <img src="/images/web1.png" alt="app2">
+                </div>
+                <div class="element">
+                    <div class="right-content">
+                        <h4>DigiTeck</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                       
+                    </div>
+                    <img src="/images/web2.png" alt="app2">
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="Website" class="tabs">
+          <div class="data">
+            <div class="element">
+                    <img src="/images/web1.png" alt="web1">
+                    <h4>Panto</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="element">
+                    <img src="/images/web2.png" alt="web2">
+                    <h4>DigiTeck</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div id="Apps" class="tabs">
+            <div class="data">
+                <div class="element">
+                        <img src="/images/Portfolio image 1.png" alt="web1">
+                        <h4>Panto</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="element">
+                        <img src="/images/app2.png" alt="web2">
+                        <h4>DigiTeck</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+        </div>
+        <div id="Newsletters" class="tabs">
+            <div class="data">
+                <div class="element"><h3>Will be uploaded soon</h3></div>
+                
+            </div>
+           
+        </div>
+        <div class="graphics">
+            <img id="graph-6"src="/images/Bg graphics 1.svg" alt="hero-girl">
+            <img id="graph-7"src="/images/Bg graphics 4.svg" alt="hero-girl">
+            </div>
+    </div>
+    <img src="/images/BG effect 4.svg" id="graphic-4">
+<!-- portofolio end -->
+
+
+<!-- what client says -->
+    <div class="client-says" id="Aboutus">
+        <div class="top">
+        <h2>What Our Client Says</h2>
+        <div class="arrow-buttons">
+            <button class="arrow-button left">
+                <span class="arrow">&#10094;</span> 
+            </button>
+            <button class="arrow-button right">
+                <span class="arrow">&#10095;</span>
+            </button>
+        </div>
+        </div>
+        <div class="review">
+            <div class="review1" >
+              <img src="/images/review1.png" alt="review ">
+              <div class="contain">
+                <span class="fa fa-star checked">&#9733;</span>
+                <span class="fa fa-star checked">&#9733;</span>
+                <span class="fa fa-star checked">&#9733;</span>
+                <span class="fa fa-star checked">&#9733;</span>
+                <span class="fa fa-star checked">&#9733;</span>
+                <h3 id="font">Great Design!</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="details">
+                    <img id="pp" src="/images/pexels-photo-532220 1.png">
+                    <div class="name">
+                        <h4 >Foster Richmond</h4>
+                        <p>Product Manager DigiTeck </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="review2">
+                <h4 id="font">Great Design!</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <span class="fa fa-star checked">&#9733;</span>
+                <span class="fa fa-star checked">&#9733;</span>
+                <span class="fa fa-star checked">&#9733;</span>
+                <span class="fa fa-star checked">&#9733;</span>
+                <span class="fa fa-star checked">&#9733;</span>
+                <div class="details">
+                    <img id="pp" src="/images/Profile 2.png">
+                    <div class="name">
+                        <h4 >Eliza Ryan</h4>
+                        <p>Product Manager Panto </p>
+                    </div>
+                </div>
+             </div>
+             <div class="review2">
+                <h4 id="font">Great Design!</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <span class="fa fa-star checked">&#9733;</span>
+                <span class="fa fa-star checked">&#9733;</span>
+                <span class="fa fa-star checked">&#9733;</span>
+                <span class="fa fa-star checked">&#9733;</span>
+                <span class="fa fa-star checked">&#9733;</span>
+                <div class="details">
+                    <img id="pp" src="/images/Profile 3.png">
+                    <div class="name">
+                        <h4 >Gray Stanton</h4>
+                        <p>Product Manager DigiTeck </p>
+                    </div>
+                </div>
+             </div>
+        
+        </div>
+    </div>
+<!-- what client says end -->
+
+
+<!-- footer start -->
+<div class="footer" id="Contactus">
+    <div class="contact-section">
+        <div class="contact-info">
+            <div class="logo">
+                <img src="/images/logo.png" alt="Opec Logo">
+            </div>
+            <div class="information">
+            <div class="address">
+                <h3>Our Address</h3>
+                <p>748-48th Avenue<br>New York, NY 10001<br>United States</p>
+            </div>
+            <div class="contacts">
+                <h3>Our Contacts</h3>
+                <p>Email: info@opec.com<br>Phone: 548-658-9983</p>
+            </div>
+        </div>
+        <h3>Follow Us</h3>
+            <div class="social-media">
+                <a href="#"><img src="/images/fb.png" alt="Facebook"></a>
+                <a href="#" id="twitter"><img src="/images/x.png" alt="Twitter"></a>
+                <a href="#"><img src="/images/insta.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h1>Contact Us</h1>
+            <form id="contactForm">
+                <div class="form-group">
+                    
+                    <input type="text" id="name" name="name" value="Name" required>
+                </div>
+                <div class="form-group" id="flex">
+                    <input type="text" id="email" name="email" value="Email" required>
+                    <input type="text" id="contact-number" name="contact-number" value="Number" required>
+                </div>
+                <div class="form-group" id="last_part">
+                    
+                    <input type="text" id="message" name="message" value="Message" required></input>
+                    <button type="submit" id="sub">Send message</button>
+                </div>
+                
+            </form>
+            <footer>
+                <p>© 2022 Opec, All Rights Reserved</p>
+            </footer>
+        </div>
+    </div>
+</div>
+
+<!-- footer end -->
+</body>
+</html>
