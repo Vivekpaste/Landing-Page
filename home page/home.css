@@ -153,6 +153,8 @@ nav ul li a:hover {
 
 }
 
+
+
 #graph-5
 {
     width:50px;
@@ -166,7 +168,7 @@ nav ul li a:hover {
     width:50px;
     position: absolute;
     left:0px;
-    top:810px;
+    top:860px;
 }
 
 #graph-7
@@ -174,7 +176,23 @@ nav ul li a:hover {
     width:50px;
     position: absolute;
     left:1050px;
-    top:810px;
+    top:780px;
+}
+
+#graph-8
+{
+    width:35px;
+    position: absolute;
+    left:-90px;
+
+}
+
+#graph-9
+{
+    width:35px;
+    position: absolute;
+    right:50px;
+    top:50px;
 }
 /* graphics end */
 
@@ -399,55 +417,57 @@ nav ul li a:hover {
     font-weight: 150;
 }
 
-.left{
+.lefts{
     margin:30px 0px;
     width:45%;
 }
 
-.left a,p,h3
+.lefts a,p,h3
 {
     margin:30px 0;
 }
 
-.left h3{
+.lefts h3{
     margin:0px;
     margin-top:30px;
 }
-.left p
+.lefts p
 {
     color:#ffffffa2;
 
 }
 
-.left a{
+.lefts a{
     text-decoration: none;
     color: #ffffffa2;
     
 }
 
-.left .contact-button
+
+
+.lefts .contact-button
 {
     border: 1px solid #ffffff48;
     
 }
 
-.left img{
+.lefts img{
     width:450px;
 
 }
 
-.left .arrow-buttons
+.lefts .arrow-buttons
 {
     display: none;
 }
 
-.right
+.rights
 {
     width:65%;
     margin-left:50px;
 }
 
-.right .element
+.rights .element
 {
     display: flex;
     margin:20px;
@@ -520,6 +540,11 @@ nav ul li a:hover {
     justify-content:space-between ;
     margin:50px 0px;
 
+}
+
+.review .arrow-buttons
+{
+    display: none;
 }
 
 .client-says .review1
@@ -830,10 +855,10 @@ input[type=text] {
 #graph-2
 {
   
-    width:50px;
+    width:40px;
     position: absolute;
     bottom:200px;
-    left:370px;
+    left:250px;
 
 }
 #graph-3
@@ -847,18 +872,17 @@ input[type=text] {
 {
     width:50px;
     position: absolute;
-    bottom:-150px;
-    left:370px;
+    bottom:-190px;
+    left:250px;
 
 }
 
 #graph-5
 {
-    width:30px;
+    width:40px;
     position: absolute;
     left:20px;
-    top:2635px;
-    
+    top:2700px
 }
 
 #graph-6
@@ -874,8 +898,21 @@ input[type=text] {
 {
     width:50px;
     position: absolute;
-    left:370px;
-    top:810px;
+    left:300px;
+    top:700px;
+    z-index: -1;
+   
+}
+#graph-8
+{
+    display: none;
+}
+
+#graph-9
+{
+    top:1100px;
+    left:300px;
+    width:30px;
 }
 
 
@@ -909,7 +946,7 @@ input[type=text] {
     display: block;
     position: fixed;
     top: 20px; 
-    right: 20px; 
+    right:0px; 
     z-index: 9999; 
     background: none;
     border: none;
@@ -992,8 +1029,8 @@ nav ul
 }
 .graphics img 
 {
-    margin-top: 30px;;
-    width:400px
+    margin-top: 30px;
+    width:350px
 }
 
 .service .containers
@@ -1002,171 +1039,238 @@ nav ul
     flex-direction: column;
 
 }
-    .container {
-        width: 90%;
-        margin-bottom: 20px;
-    }
+.container {
+    width: 90%;
+    margin-bottom: 20px;
+}
 
-    .portofolio {
-        margin: 100px auto;
-        padding:30px;
-    }
 
-    #Website .data 
-    {
-        flex-direction: column;
-    }
+/* portfolio start */
+.portofolio {
+    margin: 100px auto;
+    padding:30px;
+}
 
-    #Apps .data
-    {
-        flex-direction: column;
-    }
+.data .arrow-buttons 
+{
+   display: flex;
+    justify-content: center;
 
-    .contact-button:hover
-    {
-        background-color: #ff4d4d;
-        color:#fff
-    }
-    .left
-    .contact-button
-    {
-        display: none;
-    }
+}
+
+.arrow-buttons {
+    
+    gap: 10px;
+    text-align: center;
     
 
-    .data .left img {
-        width:350px;
-        
-    };
-    .data {
-        flex-direction: column;
-        justify-content: center;
-    }
+}
 
-    .left
-     {
-        width: 90%;
-        margin: 20px 0;
+.arrow-button {
+    background-color: transparent;
+    border: 2px solid #555;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin:0px 0px;
+}
+
+
+
+.portofolio .tab .tablinks{
+    margin-right:0px;
+    padding:10px 10px;
+}
+
+#Website .data 
+{
+    flex-direction: column;
+  
+}
+#Website .data .element
+{
+    width:300px;
+}
+
+#Website .data .element img
+{
+    width:270px;
+}
+
+
+
+#Apps .data
+{
+    flex-direction: column;
+}
+
+#Apps .data .element
+{
+    width:300px;
+}
+#Apps .data .element img
+{
+    width:270px;
+}
+
+.contact-button:hover
+{
+    background-color: #ff4d4d;
+    color:#fff
+}
+.lefts
+.contact-button
+{
+    display: none;
+}
+
+
+.data .lefts img {
+    width:310px;
     
-    }
+};
+.data {
+    flex-direction: column;
+    justify-content: center;
+}
 
-    .left .contact-buttons
+.data .lefts
     {
-        display: block;
-    }
+    width: 100%;
+   justify-content:center ;
 
-    .right
-    {
-        display:none;
-    }
-    .client-says .review {
-        flex-direction: column;
-        align-items: center;
-    }
+}
+
+.lefts .contact-buttons
+{
+    display: block;
+}
+
+.data .rights
+{
+    display:none;
+}
+
+/* portfolio end */
 
 
-    .review1{
-        display: flex;
-        flex-direction: column;
-        height:400px;
-    }
-    .review1 img
-    {
-        width:300px;
-        height: 200px;
-        
-        margin:35px 20px;
+
+/* 
+client-says start */
+.client-says
+{
+    margin:0px auto;
+    padding:30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+.client-says .review {
+    flex-direction: column;
+    align-items: center;
+}
+
+.review .arrow-buttons
+{
+    display: flex;
+    margin:30px 0;
+}
+
+.review1{
+    display: flex;
+    flex-direction: column;
+    height:400px;
+    margin-top:0px;
+    width:300px;
+   
+}
+.review1 img
+{
+    width:250px;
+    height: 200px;
     
-    }
+    margin:35px 20px;
 
-    .review .review1
-    {
-        width:fit-content;
-        height:600px;
-    }
-    
-    .review1 #pp
-    {
-        margin-left:0px;
-        margin-top: -5px;;
-    }
+}
 
-    .contain{
-        padding:0px 30px;
-        margin-top:0px
-    }
+.review .review1
+{
+    width:fit-content;
+    height:600px;
+}
 
-    .review2
-    {
-        display: none;
-    }
+.review1 #pp
+{
+    margin-left:0px;
+    margin-top: -5px;;
+}
 
-    .contact-section
-    {
-        flex-direction: column;
+.contain{
+    padding:0px 30px;
+    margin-top:0px
+}
 
-    }
+.review2
+{
+    display: none;
+}
 
-    .top h2
-    {
-        text-align: center;
-    }
+.contact-section
+{
+    flex-direction: column;
 
-    .arrow-buttons {
-        display: flex;
-        gap: 10px;
-        text-align: center;
-        position: relative;
-        top:747px;
-        right:175px;
-    
-    }
-    
-    .arrow-button {
-        background-color: transparent;
-        border: 2px solid #555;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        transition: background-color 0.3s, border-color 0.3s;
-        margin:0px 0px;
-    }
-    
-    .arrow-button .arrow {
-        font-size: 18px;
-        color: #555;
-    }
-    
-    .arrow-button:hover {
-        background-color: #ff4d4d;
-        border-color: #ff4d4d;
-    }
-    
-    .arrow-button:hover .arrow {
-        color: #fff;
-    }
-    
-    .arrow-button:active {
-        background-color: #ff4d4d;
-        border-color: #ff4d4d;
-    }
-    
-    .arrow-button:active .arrow {
-        color: #fff;
-    }
+}
+.top{
+    display:block ;
+    width:300px;
+}
 
-    .portofolio
-    {
-        margin-top: -100px;;
-    }
+.arrow-buttons
+{
+    display: none;
+}
 
-    .client-says
-    {
-        margin-top:-60px;
-    }
+.top h2
+{
+    display: block;
+    font-size: 40px;
+    width:250px;
+}
+
+
+
+.portofolio
+{
+    margin-top: -100px;;
+}
+
+.client-says
+{
+    margin-top:-60px;
+}
+
+ .form-group 
+{
+   flex-direction: column;
+}
+
+.form-group #message{
+    width:200px;
+}
+
+.information
+{
+    gap:10px;
+}
+#sub
+{
+    width:fit-content;
+}
     
 }
