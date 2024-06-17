@@ -829,7 +829,7 @@ input[type=text] {
 }
 #twitter
 {
-    padding:7px;
+    padding:6px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
@@ -838,7 +838,7 @@ input[type=text] {
 }
 
 #twitter img{
-    width:12px
+    width:10px;
 }
 
 @media screen and (max-width: 768px)
@@ -1192,7 +1192,7 @@ client-says start */
 }
 .review1 img
 {
-    width:250px;
+    width:267px;
     height: 200px;
     
     margin:35px 20px;
