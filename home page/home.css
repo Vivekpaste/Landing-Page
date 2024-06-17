@@ -858,7 +858,7 @@ input[type=text] {
     width:40px;
     position: absolute;
     bottom:200px;
-    left:250px;
+    left:70%;
 
 }
 #graph-3
@@ -873,7 +873,7 @@ input[type=text] {
     width:50px;
     position: absolute;
     bottom:-190px;
-    left:250px;
+    left:75%;
 
 }
 
@@ -898,7 +898,7 @@ input[type=text] {
 {
     width:50px;
     position: absolute;
-    left:300px;
+    left:80%;
     top:700px;
     z-index: -1;
    
@@ -911,7 +911,7 @@ input[type=text] {
 #graph-9
 {
     top:1100px;
-    left:300px;
+    left:90%;
     width:30px;
 }
 
@@ -1020,7 +1020,8 @@ nav ul
     flex-direction: column;
     align-items: center;
     padding:0px 30px;
-    
+    position: relative;
+    margin:0px auto;
 }
 
 .hero.content h1
@@ -1030,9 +1031,14 @@ nav ul
 .graphics img 
 {
     margin-top: 30px;
-    width:350px
+    width:350px;
+   
 }
 
+.service{
+    position: relative;
+    padding:30px;
+}
 .service .containers
 {
     align-items: center;
